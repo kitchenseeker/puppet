@@ -1,0 +1,7 @@
+#managed by puppet
+domain <%= @DOMAIN %>
+search <%= @PATH %>
+<% @NAMESERVER.each do |val| -%>
+nameserver <%= val %>
+<% end %> 
+
