@@ -2,10 +2,10 @@
 
 ##Modules
 
-***packs***
-***sudoerz***
-***macro-useradd***
-***resolve_conf***
+1. ***packs***
+2. ***sudoerz***
+3. ***macro-useradd***
+4. ***resolve_conf***
 
 ### Team Members
 Igor
