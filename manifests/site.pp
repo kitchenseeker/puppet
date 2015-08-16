@@ -19,9 +19,9 @@ macro-useradd { "gianluka":
         pass    => "!",
         name    => "Cloud Architect",
         groups  => ["sudo","adm"],
-        uid     => "1000",
-        sshkey  => "AAAAB3NzaC1yc2EAAAADAQABAAABAQDHZEIeOyj4HzMUuNQefFvMshct8UdWuLzZ8j5tFyeCjP/+GOsBNP4XAVaPny6RtgTLIae2zo+qq/r0pnQml7vIWJOJ68btMT219rf5oihqfLxldd/PQncPHPih/91f6TKA9w2pOoynti5Wvewi0VVp7zeGGDQGGNj1ZhahkqroX5LMutccZB59y+POuJlHUH7sgpJPTou/KAyTxUswLJSrsVaJp12HsRufSVXRfAc1/I2vBrBXhSnHnDZBf1YCIIboVpWu0y616dFUybfNvmEa7Rbi1tT3B63L9RCnQ3+1g5EZ2WXffN+zJ45mepTo+6l7/fpfFrbw0KOfFVVeDWlt"
-       }
+        uid     => "2000",
+        sshkey  => "AAAAB3NzaC1yc2EAAAABIwAAAQEAtcT2WmjM0D2u4gLwY3zG3QGnXrIRBO3/MyGuSStpnb54PSYxNU4Hh4xTYZWllXc/zBpxgG43uJqOPOZfRqeqXFETswlyixSkMELxaCBJeyZkqH3o3vXdSkSkw3CHl60PwqhXNwaraSPa8dpZMyWfiSw23fXqQ7cskCK5qGyB6KnvggK8aeOtknHSwqVTqI/ueSRSRhi0cnzheldNTRLbg8dzYUSVMNiMI5fPckYLgksKKkYi1imW5DrVxCr5+a+XqY2fEKdiTBLK6Vsyc7GpGxOEBg8QRUyzTlxRkZSmj4k8zj0pvVYI5wKK2shPDTboyU7SweFPl0q2wIeBEoLtHw=="
+}
 
 
 

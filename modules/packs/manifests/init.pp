@@ -8,7 +8,7 @@ class packs::utils {
 
 
 class packs::dbi {
-    $enhancers = ["mysql-server-5.5", "emacs"]
+    $enhancers = ["mysql-server-5.5"]
     package { $enhancers: ensure => "installed" }
 }
 
