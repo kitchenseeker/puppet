@@ -12,5 +12,5 @@ __Team members__: _Igor, Akash, Luca_
 4. ***resolve_conf***  _configure /etc/resolv.conf_
 
 ## Custom Shell Script
-* git-pup - _Run in a cromjob as backup for the puppet folder_
+* git-pup - _Run in a cronjob as backup for the puppet folder_
 * config-agent.sh - _autoconfig pupet agents_
