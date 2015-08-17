@@ -8,7 +8,7 @@ __Team members__: _Igor, Akash, Luca_
 
 1. ***packs***  _ensure the right packet ae instolled to the right server_
 2. ***sudoerz*** _makesure the /etc/sudoers is the same across the farm_
-3. ***macro-useradd*** _add team accounts and ssh keys
+3. ***macro-useradd*** _add team accounts and ssh keys_
 4. ***resolve_conf***  _configure /etc/resolv.conf_
 
 ## Custom Shell Script
