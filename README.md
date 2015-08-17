@@ -13,5 +13,4 @@ __Team members__: _Igor, Akash, Luca_
 
 ## Custom Shell Script
 * git-pup - _Run in a cromjob as backup for the puppet folder_
-* config-agent.sh - autoconfig pupet agents  
-
+* config-agent.sh - _autoconfig pupet agents_
