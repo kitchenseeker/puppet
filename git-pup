@@ -1,4 +1,5 @@
 #!/bin/bash
+##Run in a cronjob
 git add -A 
 git commit -m "$(date) puppet script commit"
 git push -u origin master
