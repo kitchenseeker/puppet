@@ -13,7 +13,7 @@ class packs::dbi {
 }
 
 class packs::app {
-    $enhancers = ["php-curl","zip","unzip","apache2"]
+    $enhancers = ["php5-curl","zip","unzip","apache2"]
     package { $enhancers: ensure => "installed" }
 }
 
