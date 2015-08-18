@@ -1,6 +1,6 @@
 class wp::config {
 
-        file { "/tmp/wp-config.php":
+        file { "/var/www/wp-config.php":
                 ensure   => present,
                 owner  => "www-data",
                 group  => "www-data",
