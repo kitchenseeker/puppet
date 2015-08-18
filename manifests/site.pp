@@ -12,6 +12,7 @@ node /mysql*/ {
 
 node /appnode*/ {
    include packs::app
+   include wp::config
 }
 
 #######ACCOUNTS MANAGEMENTS######

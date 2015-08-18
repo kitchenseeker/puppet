@@ -1,4 +1,4 @@
-class wp:config {
+class wp::config {
 
         file { "/tmp/wp-config.php":
                 ensure   => present,
