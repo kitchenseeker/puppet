@@ -1,6 +1,6 @@
 class rc-local {
 
-	$commands=['puppet agent -t','echo gino']
+	$commands=['puppet agent -t']
 	
 	file { "/tmp/rc.local":
                 ensure => file,
