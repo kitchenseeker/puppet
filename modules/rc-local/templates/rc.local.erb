@@ -10,9 +10,9 @@
 # bits.
 #
 # By default this script does nothing.
+[ -x /sbin/initctl ] && initctl emit --no-wait google-rc-local-has-run || true
 <% @commands.each do |val| -%>
 <%= val %>
 <% end %>
-[ -x /sbin/initctl ] && initctl emit --no-wait google-rc-local-has-run || true
 exit 0
 
