@@ -2,7 +2,7 @@
 #list of packages nice to have installed on the system
 
 class packs::utils {
-    $enhancers = [ "mysql-client","screen","dnsutils", "vim", "nmap","curl", "lsof"]
+    $enhancers = [ "git","mysql-client","screen","dnsutils", "vim", "nmap","curl", "lsof"]
     package { $enhancers: ensure => "installed" }
 }
 
