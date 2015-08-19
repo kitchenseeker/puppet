@@ -12,12 +12,12 @@ class wp::stable {
 	$HOST =	'mysql.kitchenseeker.com'
 
 	file { "/var/www/wp-config.php":
-        	notify => service["apache2"]
+        	notify => service["apache2"],
 		ensure => file,
         	owner  => "www-data",
         	group  => "www-data",
         	mode   => 0644,
-        	content => template("wp/wp-config_php.erb")
+        	content => template("wp/wp-config_php.erb"),
         }
 
 }
