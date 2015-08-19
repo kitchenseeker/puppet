@@ -12,7 +12,12 @@ node /mysql*/ {
 
 node /appnode*/ {
    include packs::app
-   include wp::config
+   include wp::stable
+}
+
+node /devappnode*/ {
+   include packs::app
+   #include wp::dev
 }
 
 #######ACCOUNTS MANAGEMENTS######
