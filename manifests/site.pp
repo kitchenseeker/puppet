@@ -37,5 +37,11 @@ macro-useradd { "igorvolovichev":
         sshkey  => "AAAAB3NzaC1yc2EAAAADAQABAAABAQDTUxPFVkURnhd04sVbiuU0B4zjDrTG0l3b6cGauJjJFvhN5rueCE0o5vZikg7RXOe/dqqhZB7H9JIYtVonVgoAJubTuWH6Anszdj5DZ+eTTUjn8gBh4xzrm5nVG4izgfOfWB3iBlQcFzJOnr/zTBSSzsSBhJnrPast0L0E2RDQ3/baDvmlEztAiy1mwV2pAbccdWjFkNuSWv5wEHYbILh/P5PS9HEupmarLCtqhJxaZgR3cLP2Mkzoc6bcxEtNh8g7rMsjTiymNrgrtKQsOgwePHpWFlmVQBA5prRYv8PwWZ8RHhm06ypLehQPO9NDNV4wREAZTdTcyc8QBtJNVOc7"
 
 }
-
+macro-useradd { "akash":
+        pass    => "!",
+        name    => "Web Developer",
+        groups  => ["sudo","adm","www-data"],
+        uid     => "2002",
+        sshkey  => ""
+}
 
