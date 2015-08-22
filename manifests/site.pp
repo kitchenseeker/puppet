@@ -15,9 +15,9 @@ node /appnode*/ {
    include wp::stable
 }
 
-node /devappnode*/ {
+node /devnode*/ {
    include packs::app
-   #include wp::dev
+   include wp::dev
 }
 
 #######ACCOUNTS MANAGEMENTS######

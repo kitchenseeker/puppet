@@ -5,7 +5,6 @@ class wp::stable {
     	enable  => "true",
 	}	
 
-
 	$DB_NAME = 'wordpress'
 	$DB_USER = 'wordpress'
 	$DB_U_PW = '-VQgsw2gDv'
@@ -37,10 +36,15 @@ class wp::stable {
 class wp::dev {
 
         service { "apache2":
-        ensure  => "running",
-        enable  => "true",
+        	ensure  => "running",
+        	enable  => "true",
         }
 
+	mysql::db { 'wordpress':
+  		user     => 'wordpress',
+  		password => '-VQgsw2gDv',
+  		host     => 'localhost',
+	} 
 
         $DB_NAME = 'wordpress'
         $DB_USER = 'wordpress'
