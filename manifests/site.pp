@@ -8,7 +8,7 @@ node 'default' {
 }
 
 node 'test-103' {
-	include dbi::active
+	include dbi::cluster
 }
 
 node /mysql*/ {
