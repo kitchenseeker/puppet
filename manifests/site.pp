@@ -51,7 +51,7 @@ macro-useradd { "akash":
         sshkey  => ""
 }
 
-$mysql_id = regsubst($ipaddress_eth0, '\.(\d+)\.(\d+)$', '\3\4') 
+$mysql_id = regsubst($ipaddress_eth0, '^(\d+)\.(\d+)\.(\d+)\.(\d+)$', '\3\4') 
 file {'/tmp/example-ip':                                            # resource type file and filenme
   ensure  => present,                                               # make sure it exists
   mode    => 0644,                                                  # file permissions
