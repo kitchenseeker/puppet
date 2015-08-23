@@ -17,6 +17,7 @@ node /appnode*/ {
 
 node /devnode*/ {
    include packs::app
+   include dbi::standalone
    include wp::dev
 }
 

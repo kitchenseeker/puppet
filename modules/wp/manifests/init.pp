@@ -20,7 +20,7 @@ class wp::stable {
                 provider => git,
                 source   => 'https://github.com/kitchenseeker/www.git',
                 revision => 'master',
-        }
+        } ->
 
 
 	file { "/var/www/wp-config.php":
@@ -40,35 +40,30 @@ class wp::dev {
         	enable  => "true",
         }
 
-	mysql::db { 'wordpress':
-  		user     => 'wordpress',
-  		password => '-VQgsw2gDv',
-  		host     => 'localhost',
-	} 
+    		
 
         $DB_NAME = 'wordpress'
         $DB_USER = 'wordpress'
         $DB_U_PW = '-VQgsw2gDv'
         $HOST = 'localhost'
 
-        file { "/var/www/wp-config.php":
+        vcsrepo { '/var/www':
+                notify   => service["apache2"],
+                ensure   => present,
+                force    => 'true',
+                owner    => "www-data",
+                group    => "www-data",
+                provider => git,
+                source   => 'https://github.com/kitchenseeker/www.git',
+                revision => 'development',
+        } ->      
+	
+	file { "/var/www/wp-config.php":
                 notify => service["apache2"],
                 ensure => file,
                 owner  => "www-data",
                 group  => "www-data",
                 mode   => 0644,
                 content => template("wp/wp-config_php.erb"),
-        }
-
-        vcsrepo { '/var/www':
-                notify => service["apache2"],
-                ensure   => present,
-                owner  => "www-data",
-                group  => "www-data",
-                provider => git,
-                source   => 'https://github.com/kitchenseeker/www.git',
-                revision => 'development',
-        }
-
+        } 
 }
-
