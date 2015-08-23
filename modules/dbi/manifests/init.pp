@@ -1,9 +1,10 @@
-class dbi::active {
+class dbi::cluster {
 
+	$sql_id = regsubst($ipaddress_eth0, '^(\d+)\.(\d+)\.(\d+)\.(\d+)$', '\3\4')
 	class{ '::mysql::server':
 		override_options => { 'mysqld' => {
-    			'server-id'     => '1',
-                        'log-bin'       => 'mysql-bin',
+    			'server-id'     => $sql_id,
+                        'log_bin'       => '/var/log/mysql/mysql-bin.log',
                         'datadir'       => '/var/lib/mysql',
                         'binlog-do-db'  => 'wordpress',
                         'bind-address'  => '0.0.0.0',
