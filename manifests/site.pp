@@ -51,3 +51,10 @@ macro-useradd { "akash":
         sshkey  => ""
 }
 
+$mysql_id = regsubst($ipaddress_eth0, '.', '') 
+file {'/tmp/example-ip':                                            # resource type file and filenme
+  ensure  => present,                                               # make sure it exists
+  mode    => 0644,                                                  # file permissions
+  content => "Gino Here is my Public IP Address: ${mysql_id}.\n",  # note the ipaddress_eth0 fact
+}
+
