@@ -3,7 +3,12 @@ include packs::utils
 include resolv_conf
 include sudoerz
 include rc-local
+
 node 'default' {
+}
+
+node 'test-103' {
+	include dbi::active
 }
 
 node /mysql*/ {

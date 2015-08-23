@@ -2,7 +2,7 @@
 #list of packages nice to have installed on the system
 
 class packs::utils {
-    $enhancers = [ "git","screen","dnsutils", "vim", "nmap","curl", "lsof"]
+    $enhancers = [ "git","screen","dnsutils", "vim", "curl", "lsof"]
     package { $enhancers: ensure => "installed" }
 }
 
