@@ -6,7 +6,7 @@ class dbi::cluster {
     			'server-id'     => $sql_id,
                         'log_bin'       => '/var/log/mysql/mysql-bin.log',
                         'datadir'       => '/var/lib/mysql',
-                        'binlog-do-db'  => 'wordpress',
+                        'binlog_do_db'  => 'wordpress',
                         'bind-address'  => '0.0.0.0',
                         }
 		}
