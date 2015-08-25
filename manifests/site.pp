@@ -7,13 +7,14 @@ include rc-local
 node 'default' {
 }
 
-node 'test-103' {
+node /mysql-r*/ {
+	include packs::dbi
 	include dbi::cluster
 }
 
-node /mysql*/ {
-   include packs::dbi
-}
+#node /mysql*/ {
+   #include packs::dbi
+#}
 
 node /appnode*/ {
    include packs::app
