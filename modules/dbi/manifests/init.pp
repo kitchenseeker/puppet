@@ -22,7 +22,7 @@ class dbi::cluster {
     		ensure  => 'present',
 		password_hash => mysql_password('gigi'),
 	} ->
-	mysql_grant { 'replication@%/wordpress.*':
+	mysql_grant { 'replication@%/*.*':
 		ensure     => 'present',
 		options    => ['GRANT'],
 		privileges => ['REPLICATION SLAVE'],
