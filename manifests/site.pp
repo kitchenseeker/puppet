@@ -12,13 +12,13 @@ node /mysql-r*/ {
 	include dbi::cluster
 }
 
-#node /mysql*/ {
-   #include packs::dbi
-#}
-
 node /appnode*/ {
-   include packs::app
-   include wp::stable
+   	include packs::app
+   	include wp::stable
+
+	host { 'www.kitchenseeker.co.vu':
+    		ip => $ipaddress_eth0,
+	}
 }
 
 node /devnode*/ {
