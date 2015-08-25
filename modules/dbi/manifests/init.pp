@@ -25,8 +25,8 @@ class dbi::cluster {
 	mysql_grant { 'replication@%/wordpress.*':
 		ensure     => 'present',
 		options    => ['GRANT'],
-		privileges => ['ALL'],
-		table      => 'wordpress.*',
+		privileges => ['REPLICATION SLAVE'],
+		table      => '*.*',
 		user	   => 'replication@%',
 	}
 }
