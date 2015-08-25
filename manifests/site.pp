@@ -24,7 +24,7 @@ node /appnode*/ {
 node /devnode*/ {
    include packs::app
    include dbi::standalone
-   include wp::dev
+   #include wp::dev
 }
 
 #######ACCOUNTS MANAGEMENTS######
