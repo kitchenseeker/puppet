@@ -7,8 +7,8 @@ class cron::app{
 		source => "puppet:///modules/cron/cron.app" 
 	}
 
-	service { 'ntp':
-        	name      => $service_name,
+	service { 'cron':
+        	name      => cron,
         	ensure    => running,
 	}
 }
