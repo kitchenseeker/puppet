@@ -10,6 +10,7 @@ You have new mail.
 Last login: Wed Sep 23 11:21:12 2015 from puppet.c.augmented-form-103908.internal
 gianluka@devnode-1:~$ cat /etc/crontab 
 # /etc/crontab: system-wide crontab
+# managed by puppet: any changes will be overritten
 # Unlike any other crontab you don't have to run the `crontab'
 # command to install the new version when you edit this file
 # and files in /etc/cron.d. These files also have username fields,
