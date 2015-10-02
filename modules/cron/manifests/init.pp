@@ -1,5 +1,5 @@
 class cron::app{
-	file {'/tmp/example-cron': 
+	file {'/etc/crontab': 
   		ensure  => file,
 		owner   => root,
 		group   => root,

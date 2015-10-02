@@ -15,7 +15,7 @@ node /mysql-r*/ {
 node /appnode*/ {
    	include packs::app
    	include wp::stable
-
+	include cron::app
 	host { 'www.kitchenseeker.co.vu':
     		ip => $ipaddress_eth0,
 	}
