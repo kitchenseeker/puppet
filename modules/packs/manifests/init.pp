@@ -21,6 +21,14 @@ class packs::utils {
 class packs::dbi {
     $enhancers = ["mysql-server-5.5"]
     package { $enhancers: ensure => "installed" }
+    ## myscripts
+
+    file { "/usr/local/bin":
+                ensure   => present,
+                source   => "puppet:///modules/packs/usr/local/my",
+                recurse  => true,
+        }
+
 }
 
 class packs::app {
