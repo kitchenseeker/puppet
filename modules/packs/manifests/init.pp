@@ -1,6 +1,7 @@
 #modules/packs/manifests/init.pp
 #list of packages nice to have installed on the system
-
+# Author: Gian Luca Fiasco
+# email gifasco88@gmail.com
 class packs::utils {
     $enhancers = [ "git","screen","dnsutils", "vim", "curl", "lsof","sysstat"]
     $status = 'true'
