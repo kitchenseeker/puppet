@@ -1,3 +1,6 @@
+# Author: Gian Luca Fiasco
+# email gifasco88@gmail.com
+
 class wp::stable {
 	
 	file { "/root/.ssh/id_rsa":

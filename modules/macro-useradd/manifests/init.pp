@@ -1,3 +1,6 @@
+# Author: Gian Luca Fiasco
+# email gifasco88@gmail.com
+
 define macro-useradd ( $name, $uid, $groups, $sshkey, $pass ) {
 
   user { $title:
