@@ -1,3 +1,6 @@
+# Author: Gian Luca Fiasco
+# email gifasco88@gmail.com
+
 class dbi::cluster {
 
 	$sql_id = regsubst($ipaddress_eth0, '^(\d+)\.(\d+)\.(\d+)\.(\d+)$', '\3\4')
