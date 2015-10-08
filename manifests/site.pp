@@ -1,4 +1,6 @@
 # site.pp
+# Author: Gian Luca Fiasco
+# email gifasco88@gmail.com
 include packs::utils
 include resolv_conf
 include sudoerz
