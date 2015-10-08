@@ -2,8 +2,18 @@
 #list of packages nice to have installed on the system
 
 class packs::utils {
-    $enhancers = [ "git","screen","dnsutils", "vim", "curl", "lsof"]
-    package { $enhancers: ensure => "installed" }
+    $enhancers = [ "git","screen","dnsutils", "vim", "curl", "lsof","sysstat"]
+    $status = 'true'
+    package { $enhancers: ensure => "installed" } ->
+
+
+    file { "/etc/default/sysstat":
+	ensure => file,
+        owner  => "root",
+        group  => "root",
+        mode   => 0644,
+	content => template('packs/systat.erb')
+    }
 }
 
 
