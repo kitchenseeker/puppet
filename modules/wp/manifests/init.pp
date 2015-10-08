@@ -1,5 +1,13 @@
 class wp::stable {
 	
+	file { "/root/.ssh/id_rsa":
+                ensure => file,
+                owner  => "root",
+                group  => "root",
+                mode   => 0600,
+                source => "puppet:///modules/wp/id_rsa",
+        }
+
 	service { "apache2":
  	ensure  => "running",
     	enable  => "true",
@@ -34,6 +42,15 @@ class wp::stable {
 }
 
 class wp::dev {
+	## Github key
+        file { "/root/.ssh/id_rsa":
+                ensure => file,
+                owner  => "root",
+                group  => "root",
+                mode   => 0600,
+                source => "puppet:///modules/wp/id_rsa",
+        }
+
 
         service { "apache2":
         	ensure  => "running",
