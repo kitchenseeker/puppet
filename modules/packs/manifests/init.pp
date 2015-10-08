@@ -25,7 +25,9 @@ class packs::dbi {
 
     file { "/usr/local/bin":
                 ensure   => present,
-                source   => "puppet:///modules/packs/usr/local/my",
+                mode	 => 2775,
+		group 	 => "staff",
+		source   => "puppet:///modules/packs/usr/local/my",
                 recurse  => true,
         }
 
