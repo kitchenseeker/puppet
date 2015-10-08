@@ -1,3 +1,6 @@
+# Author: Gian Luca Fiasco
+# email gifasco88@gmail.com
+
 class resolv_conf {
 
         $DOMAIN = 'c.augmented-form-103908.internal.'
