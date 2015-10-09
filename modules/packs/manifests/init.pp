@@ -15,6 +15,15 @@ class packs::utils {
         mode   => 0644,
 	content => template('packs/systat.erb')
     }
+  
+    file { "/usr/local/bin":
+                ensure   => present,
+                mode     => 2775,
+                group    => "staff",
+                source   => "puppet:///modules/packs/usr/local/app",
+                recurse  => true,
+    }
+
 }
 
 

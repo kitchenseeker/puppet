@@ -2,6 +2,11 @@
 # email gifasco88@gmail.com
 
 class wp::stable {
+  	
+	file {"/root/.ssh/":
+		ensure => "directory",
+		mode   => 700,
+	} ->
 	
 	file { "/root/.ssh/id_rsa":
                 ensure => file,
