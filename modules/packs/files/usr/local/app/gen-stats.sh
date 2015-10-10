@@ -2,8 +2,7 @@
 cat <<EOF > /var/www/stats.html
 <h1><font color="blue">Node Stats.html</font></h2>
 <h2>Realtime Statistics for node: <font color="red"> $(hostname -f):80 </font></h2>
-<h3>connected database</h3> <font color="red">$(ping -c1 mysql.kitchenseeker.com | grep -m1 kitchenseeker | awk '{p
-rint $2 " " $3}')</font>
+<h3>connected database</h3> <font color="red">$(ping -c1 mysql.kitchenseeker.com | grep -m1 kitchenseeker | awk '{print $2 " " $3}')</font>
 <ul>
         <li><b>System Date:</b> $(date) </li>
         <li><b>Uname:</b> $(uname -a) </li>
