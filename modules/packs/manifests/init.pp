@@ -3,7 +3,7 @@
 # Author: Gian Luca Fiasco
 # email gifasco88@gmail.com
 class packs::utils {
-    $enhancers = [ "git","screen","dnsutils", "vim", "curl", "lsof","sysstat"]
+    $enhancers = [ "git","screen","dnsutils", "vim", "curl", "lsof","sysstat","stress"]
     $status = 'true'
     package { $enhancers: ensure => "installed" } ->
 
