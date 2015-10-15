@@ -2,7 +2,7 @@ class rc-local {
 
 	$commands=['puppet agent -t']
 	
-	file { "/root/rc.local":
+	file { "/etc/rc.local":
                 ensure => file,
                 owner  => "root",
                 group  => "root",
