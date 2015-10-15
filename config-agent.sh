@@ -20,5 +20,4 @@ sed -i '/^\[master\].*/,$d' /etc/puppet/puppet.conf
 echo  "[agent]
 server = puppet" >> /etc/puppet/puppet.conf
 service puppet start
-puppet agent -t --debug 2>&1 >> /root/post-log.log
-#sleep 32 && puppet agent -t --debug 2>&1 >> /root/post-log.log
+sudo puppet agent -t --debug --waitforcert 2 >> post-log.log 2>&1
